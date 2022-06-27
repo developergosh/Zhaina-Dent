@@ -1,0 +1,322 @@
+
+
+.elements
+{
+	background: #FFFFFF;
+	padding-top: 91px;
+	padding-bottom: 25px;
+}
+.elements_title
+{
+	font-size: 30px;
+	font-weight: 600;
+	color: #404040;
+	line-height: 0.75;
+}
+
+
+
+.buttons_container
+{
+	margin-top: 60px;
+}
+.buttons_container .button
+{
+	margin-bottom: 10px;
+}
+.buttons_container .button:not(:last-child)
+{
+	margin-right: 23px;
+}
+.button_3
+{
+	background: transparent;
+	border: solid 2px #fd556d;
+}
+.button_3 a
+{
+	color: #fd556d;
+}
+.button_3:hover
+{
+	background: #fd556d;
+}
+.button_3:hover a
+{
+	color: #FFFFFF;
+}
+.button_4
+{
+	background: #57ccc3;
+	border: solid 2px transparent;
+}
+.button_4:hover
+{
+	background: transparent;
+	border: solid 2px #57ccc3;
+}
+.button_4 a
+{
+	color: #FFFFFF;
+}
+.button_4:hover a
+{
+	color: #57ccc3;
+}
+
+/*********************************
+6.2 Elements - Accordions
+*********************************/
+
+
+.accordion_container:not(:last-child)
+{
+	margin-bottom: 12px;
+}
+.accordion
+{
+	height: 46px;
+	width: 100%;
+	background: #57ccc3;
+	padding-left: 35px;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 46px;
+	border-radius: 20px;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+
+.accordion_content {
+	padding: 20px 30px;
+	background-color: white;
+	margin: 0 20px;
+}
+
+.line-border {
+	width: 100%;
+	margin: 10px 0;
+	border: 0.5px solid gray;
+	height: 0.5px;
+}
+
+.accordion div
+{
+	max-width: 90%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.accordion::after
+{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	right: 0;
+	width: 50px;
+	height: 100%;
+	content: '+';
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: 500;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.accordion.active
+{
+	background: #fd556d;
+	color: #FFFFFF;
+}
+.accordion.active::after
+{
+	content: '-';
+	color: #FFFFFF;
+}
+.accordion_panel
+{
+	padding-right: 8px;
+	max-height: 0px;
+	overflow: hidden;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+.accordion_panel > div
+{
+	padding-bottom: 5px;
+}
+.accordion_panel p
+{
+	font-size: 14px;
+	font-weight: 500;
+	padding-top: 26px;
+	padding-left: 3px;
+	color: #868686;
+	line-height: 2.14;
+}
+
+
+/*********************************
+6.4 Elements - Loaders
+*********************************/
+
+.loaders
+{
+	margin-top: 75px;
+}
+.loaders_row
+{
+	margin-top: 62px;
+}
+.loader_container
+{
+	height: 193px;
+}
+.loader_container:nth-last-child(n+3)
+{
+	margin-bottom: 49px;
+}
+.loader
+{
+	width: 186px;
+	height: 186px;
+	margin: 0 auto;
+	background: transparent;
+}
+.loader_content
+{
+	position: absolute;
+	left: 50%;
+	bottom: 69px;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	font-size: 18px;
+	font-weight: 500;
+	color: #232323;
+	white-space: nowrap;
+	text-align: center;
+}
+.loader_title
+{
+	font-size: 18px;
+	font-weight: 600;
+	color: #404040;
+	line-height: 0.75;
+	white-space: nowrap;
+}
+.progressbar-text
+{
+	top: 45.5% !important;
+	font-size: 36px !important;
+	font-weight: 700 !important;
+	color: #57ccc3 !important;
+	line-height: 0.75 !important;
+}
+
+/*********************************
+6.5 Elements - Milestones
+*********************************/
+
+.milestones
+{
+	margin-top: 90px;
+}
+.milestones_row
+{
+	margin-top: 60px;
+}
+.milestone
+{
+	width: 100%;
+}
+.milestone_content
+{
+	padding-left: 20px;
+}
+.milestone_counter
+{
+	font-size: 36px;
+	font-weight: 700;
+	color: #57ccc3;
+	line-height: 0.75;
+}
+.milestone_text
+{
+	font-size: 18px;
+	color: #404040;
+	font-weight: 600;
+	margin-top: 12px;
+	line-height: 0.75;
+	white-space: nowrap;
+	padding-left: 3px;
+}
+
+/*********************************
+6.6 Elements - Icon Boxes
+*********************************/
+
+.icon_boxes
+{
+	margin-top: 93px;
+}
+.services_row
+{
+	margin-top: 60px;
+}
+.service_col
+{
+	margin-bottom: 55px;
+}
+.service_title
+{
+	font-size: 20px;
+	font-weight: 600;
+	color: #404040;
+	line-height: 1.2;
+	margin-top: 17px;
+}
+.service_text
+{
+	margin-top: 21px;
+}
+.icon_container
+{
+	width: 61px;
+	height: 61px;
+	border-radius: 50%;
+	background: #6bdbd2;
+}
+.icon
+{
+	width: 32px;
+	height: 32px;
+}
+.icon img
+{
+	max-width: 100%;
+}
